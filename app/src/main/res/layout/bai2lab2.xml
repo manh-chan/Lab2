@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images" />
+
+    <EditText
+        android:id="@+id/edt_hoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Nhap ten cua ban" />
+
+    <EditText
+        android:id="@+id/edt_masv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nhap MSSV" />
+
+    <EditText
+        android:id="@+id/edt_tuoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nhap Tuoi" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gioi Tinh:  " />
+
+        <RadioButton
+            android:id="@+id/rdonam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rdonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sở thích:" />
+
+    <CheckBox
+        android:id="@+id/cbx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chơi game" />
+
+    <CheckBox
+        android:id="@+id/cbx2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đá bóng" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtresult"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!" />
+
+</LinearLayout>
